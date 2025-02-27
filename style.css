@@ -15,7 +15,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 230px;
+    margin-top: 219px;
 }
 
 .card {
@@ -56,14 +56,14 @@ body {
     transition: 0.3s;
 }
 
-.card__link h2 {
+.card__link h1 {
     font-weight: 900;
     font-size: 24px;
     color: var(--gray-950);
     transition: 0.3s;
 }
 
-.card__link:is(:hover, :focus) h2 {
+.card__link:is(:hover, :focus) h1 {
     color: var(--yellow)
 }
 
