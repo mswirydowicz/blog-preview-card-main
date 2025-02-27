@@ -12,24 +12,75 @@ body {
     letter-spacing: 0;
 }
 
-.card__badge,
-.card__author__name {
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 0px #000000;
+
+}
+
+.card__img {
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.card__content {
+    margin-top: 24px;
+}
+
+.card__badge {
     font-weight: 900;
     font-size: 14px;
+    background: var(--yellow);
+    padding: 4px 12px;
+    color: var(--gray-950);
 }
 
 .card__published {
     font-weight: 400;
     font-size: 14px;
+    color: var(--gray-950);
 }
 
 .card__link {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card__link h2 {
     font-weight: 900;
     font-size: 24px;
-
+    color: var(--gray-950);
+    transition: 0.3s;
 }
+
+.card__link:is(:hover, :focus) h2 {
+    color: var(--yellow)
+}
+
 
 .card__description {
     font-weight: 400;
     font-size: 16px;
+    color: var(--gray-500);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+}
+
+.card__author__name {
+    font-weight: 900;
+    font-size: 14px;
+    margin-left: 12px;
 }
