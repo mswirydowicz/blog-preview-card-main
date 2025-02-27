@@ -12,23 +12,24 @@ body {
     letter-spacing: 0;
 }
 
-.text-preset-1 {
+.card__badge,
+.card__author__name {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.card__published {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card__link {
     font-weight: 900;
     font-size: 24px;
 
 }
 
-.text-preset-2 {
+.card__description {
     font-weight: 400;
     font-size: 16px;
-}
-
-.text-preset-3 {
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.text-preset-4 {
-    font-weight: 900;
-    font-size: 14px;
 }
